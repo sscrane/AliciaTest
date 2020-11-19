@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: AliciaTest5;singleton:=true
+Automatic-Module-Name: AliciaTest5
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: aliciaTest5,
+ aliciaTest5.impl,
+ aliciaTest5.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.core.runtime,
+ edu.toronto.cs.se.mmint;bundle-version="2.6.0"
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated aliciaTest5 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="aliciaTest5.presentation.AliciaTest5ModelWizardID"
+            name="%_UI_AliciaTest5ModelWizard_label"
+            class="aliciaTest5.presentation.AliciaTest5ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AliciaTest5ModelFile.gif">
+         <description>%_UI_AliciaTest5ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated aliciaTest5 -->
+      <editor
+            id="aliciaTest5.presentation.AliciaTest5EditorID"
+            name="%_UI_AliciaTest5Editor_label"
+            icon="icons/full/obj16/AliciaTest5ModelFile.gif"
+            extensions="aliciatest5"
+            class="aliciaTest5.presentation.AliciaTest5Editor"
+            contributorClass="aliciaTest5.presentation.AliciaTest5ActionBarContributor">
+      </editor>
+   </extension>
+   <extension
+         point="edu.toronto.cs.se.mmint.editors">
+      <editorType
+      		modelTypeUri="http://www.smith.edu/aliciaTest5"
+            id="aliciaTest5.presentation.AliciaTest5EditorID"
+            isDiagram="false"
+            wizardId = "aliciaTest5.presentation.AliciaTest5ModelWizardID">
+         <type
+               name="AliciaTest5 tree"
+               uri="http://www.smith.edu/aliciaTest5/Tree_aliciaTest5">
+         </type>
+         
+      </editorType>
+   </extension>
+
+</plugin>

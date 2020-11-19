@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/AliciaTest5/src-gen" creationIcons="false" editDirectory="/AliciaTest5.edit/src-gen"
+    editorDirectory="/AliciaTest5.editor/src-gen" modelPluginID="AliciaTest5" modelName="AliciaTest5"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>aliciaTest5.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="AliciaTest5" disposableProviderFactory="true" ecorePackage="aliciaTest5.ecore#/">
+    <genClasses ecoreClass="aliciaTest5.ecore#//AliciaLab">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aliciaTest5.ecore#//AliciaLab/project"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aliciaTest5.ecore#//AliciaLab/student"/>
+    </genClasses>
+    <genClasses ecoreClass="aliciaTest5.ecore#//Project">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference aliciaTest5.ecore#//Project/student"/>
+    </genClasses>
+    <genClasses ecoreClass="aliciaTest5.ecore#//Student"/>
+  </genPackages>
+</genmodel:GenModel>

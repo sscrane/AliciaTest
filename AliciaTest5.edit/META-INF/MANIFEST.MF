@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: AliciaTest5.edit;singleton:=true
+Automatic-Module-Name: AliciaTest5.edit
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: aliciaTest5.provider.AliciaTest5EditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: aliciaTest5.provider
+Require-Bundle: org.eclipse.core.runtime,
+ AliciaTest5;visibility:=reexport,
+ aliciaTest5;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
